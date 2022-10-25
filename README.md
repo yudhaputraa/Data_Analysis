@@ -12,17 +12,17 @@ List user :
     - sebagai      : nasabah
 
 Penjelasan class yang ada di code:
-- tampil_data
+- tampil_data()
     untuk menampilkan data user hanya bisa diakses admin
-- isi_saldo
+- isi_saldo()
     untuk mengisi saldo bisa di akses admin/nasabah
-- ubah_pin
+- ubah_pin()
     untuk mengubah PIN bisa di akses admin/nasabah
-- keluar
+- keluar()
     untuk keluar akun yang masuk bisa diakses admin/nasabah
-- tambah_user
+- tambah_user()
     untuk menambahkan user baru bisa diakses admin
-- hapus_user
+- hapus_user()
     untuk menghapus user bisa diakses admin
-- transfer_uang
+- transfer_uang()
     untuk mengirim saldo ke user lain bisa diakses admin/nasabah
