@@ -17,4 +17,6 @@ Penjelasan class yang ada di code:
 - isi_saldo
     untuk mengisi saldo bisa di akses admin/nasabah
 - ubah_pin
-    untuk mengubah PIN bisa di akses admn/nasabah
+    untuk mengubah PIN bisa di akses admin/nasabah
+- keluar
+    untuk keluar akun yang masuk bisa diakses admin/nasabah
