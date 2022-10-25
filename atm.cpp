@@ -288,7 +288,7 @@ int main()
         string aw_status;
         string aw_hapus_user;
 
-        aw_norek = "1111111";
+        aw_norek = "1112221";
         aw_pin = "11111";
         aw_nama = "argo";
         aw_sebagai = "admin";
@@ -303,7 +303,7 @@ int main()
         user[id_isi].status = aw_status;
         user[id_isi].hapus_user = aw_hapus_user;
 
-        aw_norek = "2222222";
+        aw_norek = "3334443";
         aw_pin = "22222";
         aw_nama = "wilis";
         aw_sebagai = "nasabah";
