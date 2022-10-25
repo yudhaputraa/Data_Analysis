@@ -16,3 +16,5 @@ Penjelasan class yang ada di code:
     untuk menampilkan data user hanya bisa diakses admin
 - isi_saldo
     untuk mengisi saldo bisa di akses admin/nasabah
+- ubah_pin
+    untuk mengubah PIN bisa di akses admn/nasabah
