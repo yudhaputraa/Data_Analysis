@@ -24,3 +24,5 @@ Penjelasan class yang ada di code:
     untuk menambahkan user baru bisa diakses admin
 - hapus_user
     untuk menghapus user bisa diakses admin
+- transfer_uang
+    untuk mengirim saldo ke user lain bisa diakses admin/nasabah
