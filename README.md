@@ -20,3 +20,5 @@ Penjelasan class yang ada di code:
     untuk mengubah PIN bisa di akses admin/nasabah
 - keluar
     untuk keluar akun yang masuk bisa diakses admin/nasabah
+- tambah_user
+    untuk menambahkan user baru bisa diakses admin/nasabah
