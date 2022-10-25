@@ -10,3 +10,7 @@ List user :
     no rekening  : 3334443
     Password     : 22222
     sebagai      : nasabah
+
+Penjelasan class yang ada di code:
+ - tampil_data
+ untuk menampilkan data
