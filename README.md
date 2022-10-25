@@ -12,5 +12,7 @@ List user :
     sebagai      : nasabah
 
 Penjelasan class yang ada di code:
- - tampil_data
- untuk menampilkan data
+- tampil_data
+    untuk menampilkan data user hanya bisa diakses admin
+- isi_saldo
+    untuk mengisi saldo bisa di akses admin/nasabah
