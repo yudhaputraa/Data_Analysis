@@ -21,4 +21,6 @@ Penjelasan class yang ada di code:
 - keluar
     untuk keluar akun yang masuk bisa diakses admin/nasabah
 - tambah_user
-    untuk menambahkan user baru bisa diakses admin/nasabah
+    untuk menambahkan user baru bisa diakses admin
+- hapus_user
+    untuk menghapus user bisa diakses admin
