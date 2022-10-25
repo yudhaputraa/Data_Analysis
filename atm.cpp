@@ -274,9 +274,13 @@ void transfer_uang(int k)
     getch();
 }
 
+
+
+
 int main()
 {
 
+    // input user awalan secara otomatis
     if (awalan == 0)
     {
         int id_isi = 1;
@@ -318,6 +322,8 @@ int main()
         awalan++;
         i = 3;
     }
+
+    // akhir input user
 
     string pilih;
     pilih = 'y';
