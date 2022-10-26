@@ -334,8 +334,7 @@ int main()
 
     char sensor, sensor_input[30];
 
-    while (pilih == "y")
-    {
+
         cout << "No Rekening : ";
         getline(cin, user_input);
         for (int j = 0; j <= i; j++)
@@ -440,7 +439,14 @@ int main()
         cout << "Lagi ya/tidak=";
         getline(cin, pilih);
         system("cls");
-    }
+
+        if (pilih == "ya")
+        {
+            login = "berhasil";
+            main();
+        }else{
+            exit(0);
+        }
 
     return 0;
 }
