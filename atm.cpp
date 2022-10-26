@@ -349,7 +349,7 @@ int main()
         {
             do
             {
-                int i_pass;
+                int i_pass = 0;
                 printf("Enter Password : ");
                 while ((sensor = getch()) != 13)
                 {
