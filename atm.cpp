@@ -274,9 +274,6 @@ void transfer_uang(int k)
     getch();
 }
 
-
-
-
 int main()
 {
 
@@ -329,124 +326,131 @@ int main()
     pilih = 'y';
 
     string login = "block";
-    int i_blok,pin_input;
+    int i_blok, pin_input;
     i_blok = 1;
 
-    char sensor, sensor_input[30];
-
-
-        cout << "No Rekening : ";
-        getline(cin, user_input);
-        for (int j = 0; j <= i; j++)
+    cout << "No Rekening : ";
+    getline(cin, user_input);
+    for (int j = 0; j <= i; j++)
+    {
+        if (user[j].norek == user_input)
         {
-            if (user[j].norek == user_input)
-            {
-                id_user = j;
-            }
+            id_user = j;
         }
+    }
 
-        if (user[id_user].norek == user_input && user[id_user].hapus_user == "aktif")
+    if (user[id_user].norek == user_input && user[id_user].hapus_user == "aktif")
+    {
+        do
         {
-            do
+            int i_pass = 0;
+            char sensor, sensor_input[30];
+            printf("Enter Password : ");
+            while ((sensor = getch()) != 13)
             {
-                int i_pass = 0;
-                printf("Enter Password : ");
-                while ((sensor = getch()) != 13)
-                {
-                    sensor_input[i_pass] = sensor;
-                    i_pass++;
-                    printf("*");
-                }
-                sensor_input[i_pass] = '\0';
-                if (sensor_input == user[id_user].pin)
-                {
-                    string pilih_menu;
-                    if (user[id_user].sebagai == "admin")
-                    {
-                        while (pilih != "8")
-                        {
-                            system("cls");
-                            cout << "1. Lihat data" << endl;
-                            cout << "2. isi saldo" << endl;
-                            cout << "3. Hapus User" << endl;
-                            cout << "4. Ubah PIN" << endl;
-                            cout << "5. Transfer" << endl;
-                            cout << "6. Tambah User" << endl;
-                            cout << "7. Keluar akun" << endl;
-                            cout << "Pilihan? = ";
-                            getline(cin, pilih_menu);
-                            if (pilih_menu == "1")
-                                tampil_data(i);
-                            if (pilih_menu == "2")
-                                isi_saldo();
-                            if (pilih_menu == "3")
-                                hapus_user(i);
-                            if (pilih_menu == "4")
-                                ubah_pin();
-                            if (pilih_menu == "5")
-                                transfer_uang(i);
-                            if (pilih_menu == "6")
-                                tambah_user(i);
-                            if (pilih_menu == "7")
-                                keluar();
-                        }
-                    }
-                    else if (user[id_user].sebagai == "nasabah")
-                    {
-                        while (pilih != "4")
-                        {
-                            system("cls");
-                            cout << "1. Isi saldo" << endl;
-                            cout << "2. Ubah PIN" << endl;
-                            cout << "3. Transfer" << endl;
-                            cout << "4. Keluar akun" << endl;
-                            cout << "Pilihan? = ";
-                            getline(cin, pilih_menu);
-                            if (pilih_menu == "1")
-                                isi_saldo();
-                            if (pilih_menu == "2")
-                                ubah_pin();
-                            if (pilih_menu == "3")
-                                transfer_uang(i);
-                            if (pilih_menu == "4")
-                                keluar();
-                        }
-                    }
-                    i_blok = 4;
-                    login = "berhasil";
-                }
-            } while (i_blok <= 3);
-
-            if (login != "berhasil")
+                sensor_input[i_pass] = sensor;
+                i_pass++;
+                printf("*");
+            }
+            sensor_input[i_pass] = '\0';
+            if (sensor_input == user[id_user].pin)
             {
-                cout << "Anda telah 3x salah login.\n";
-                cout << "Silahkan coba 40218 Hari lagi. Terima Kasih..\n\n";
+                string pilih_menu;
+                if (user[id_user].sebagai == "admin")
+                {
+                    while (pilih != "8")
+                    {
+                        system("cls");
+                        cout << "1. Lihat data" << endl;
+                        cout << "2. isi saldo" << endl;
+                        cout << "3. Hapus User" << endl;
+                        cout << "4. Ubah PIN" << endl;
+                        cout << "5. Transfer" << endl;
+                        cout << "6. Tambah User" << endl;
+                        cout << "7. Keluar akun" << endl;
+                        cout << "Pilihan? = ";
+                        getline(cin, pilih_menu);
+                        if (pilih_menu == "1")
+                            tampil_data(i);
+                        if (pilih_menu == "2")
+                            isi_saldo();
+                        if (pilih_menu == "3")
+                            hapus_user(i);
+                        if (pilih_menu == "4")
+                            ubah_pin();
+                        if (pilih_menu == "5")
+                            transfer_uang(i);
+                        if (pilih_menu == "6")
+                            tambah_user(i);
+                        if (pilih_menu == "7")
+                            keluar();
+                    }
+                }
+                else if (user[id_user].sebagai == "nasabah")
+                {
+                    while (pilih != "4")
+                    {
+                        system("cls");
+                        cout << "1. Isi saldo" << endl;
+                        cout << "2. Ubah PIN" << endl;
+                        cout << "3. Transfer" << endl;
+                        cout << "4. Keluar akun" << endl;
+                        cout << "Pilihan? = ";
+                        getline(cin, pilih_menu);
+                        if (pilih_menu == "1")
+                            isi_saldo();
+                        if (pilih_menu == "2")
+                            ubah_pin();
+                        if (pilih_menu == "3")
+                            transfer_uang(i);
+                        if (pilih_menu == "4")
+                            keluar();
+                    }
+                }
+                i_blok = 4;
+                login = "berhasil";
+            }
+            else
+            {
+                cout << "\n#======================================#" << endl;
+                cout << "#          Password Salah! (" << i_blok << "x)        #" << endl;
+                cout << "#======================================#" << endl;
+                i_blok = i_blok + 1;
             }
 
-            login = "berhasil";
-        }
-        else
-        {
-            cout << "\n===========================\n";
-            cout << "Username Salah! \n";
-            cout << "=============================\n\n";
-        }
+        } while (i_blok <= 3);
+
         if (login != "berhasil")
         {
-            cout << "Nomer Rekening Anda Salah\n";
-            cout << "Silahkan coba. Terima Kasih..\n\n";
+            cout << "Anda telah 3x salah login.\n";
         }
-        cout << "Lagi ya/tidak=";
-        getline(cin, pilih);
-        system("cls");
 
-        if (pilih == "ya")
-        {
-            login = "berhasil";
-            main();
-        }else{
-            exit(0);
-        }
+        login = "berhasil";
+    }
+    else
+    {
+        cout << "\n===========================\n";
+        cout << "Username Salah! \n";
+        cout << "=============================\n\n";
+    }
+    if (login != "berhasil")
+    {
+        cout << "Nomer Rekening Anda Salah\n";
+        cout << "Silahkan coba. Terima Kasih..\n\n";
+    }
+    cout << "Lagi ya/tidak=";
+    getline(cin, pilih);
+    system("cls");
+
+    if (pilih == "ya")
+    {
+        login = "berhasil";
+        main();
+    }
+    else
+    {
+        exit(0);
+    }
 
     return 0;
 }
