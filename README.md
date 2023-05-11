@@ -1,28 +1,12 @@
-"# tugas_uts_atm" 
+# Data Analysis
+Data analysis adalah proses mengumpulkan, membersihkan, mengorganisir, menganalisis, dan menginterpretasikan data untuk memahami pola, tren, dan hubungan di dalam data. Data analysis dapat dilakukan pada berbagai jenis data, termasuk data numerik dan kualitatif, seperti data survei, data penjualan, data produksi, data keuangan, dan banyak lagi.
 
-List user :
-1.  - nama         : argo
-    - no rekening  : 1112221
-    - Password     : 11111
-    - sebagai      : admin
+Proses data analysis terdiri dari beberapa tahapan, yaitu:
 
-2.  - nama         : wilis
-    - no rekening  : 3334443
-    - Password     : 22222
-    - sebagai      : nasabah
+1. Collecting Data: Tahap pertama adalah mengumpulkan data dari berbagai sumber yang relevan. Data dapat diperoleh dari survei, database, data transaksi, dan lain-lain.
+2. Cleaning Data: Data yang dikumpulkan mungkin mengandung kesalahan atau duplikasi. Tahap ini melibatkan pembersihan data agar data yang dihasilkan lebih akurat.
+3. Organizing Data: Setelah data bersih, data perlu diorganisir agar mudah dibaca dan diinterpretasikan. Hal ini dapat dilakukan dengan menggunakan tabel, grafik, atau diagram lainnya.
+4. Analyzing Data: Tahap ini melibatkan penggunaan metode statistik untuk mengidentifikasi pola dan tren dalam data, serta untuk memahami hubungan antara variabel yang berbeda.
+5. Interpreting Data: Setelah data dianalisis, hasilnya harus diinterpretasikan agar dapat memberikan wawasan yang berguna bagi pengambilan keputusan.
 
-Penjelasan class yang ada di code:
-- tampil_data()
-    untuk menampilkan data user hanya bisa diakses admin
-- isi_saldo()
-    untuk mengisi saldo bisa di akses admin/nasabah
-- ubah_pin()
-    untuk mengubah PIN bisa di akses admin/nasabah
-- keluar()
-    untuk keluar akun yang masuk bisa diakses admin/nasabah
-- tambah_user()
-    untuk menambahkan user baru bisa diakses admin
-- hapus_user()
-    untuk menghapus user bisa diakses admin
-- transfer_uang()
-    untuk mengirim saldo ke user lain bisa diakses admin/nasabah
+Data analysis merupakan proses yang penting dalam pengambilan keputusan bisnis. Dengan analisis data yang tepat, organisasi dapat menemukan pola dan tren yang membantu mereka memahami pasar, produk, dan perilaku konsumen. Data analysis juga digunakan dalam banyak bidang, termasuk kesehatan, keuangan, dan pemerintahan, untuk memberikan informasi yang berguna bagi pengambilan keputusan.
